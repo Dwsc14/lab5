@@ -1,8 +1,6 @@
 package models;
 
-import java.util.ArrayList;
-
-public class Student extends ArrayList<Student> {
+public class Student {
 
     String ID, name;
     float Average;
@@ -38,6 +36,11 @@ public class Student extends ArrayList<Student> {
 
     public void setAverage(float average) {
         Average = average;
+    }
+
+    @Override
+    public String toString() {
+        return "Student [ID=" + ID + ", name=" + name + ", Average=" + Average + "]";
     }
 
 }
